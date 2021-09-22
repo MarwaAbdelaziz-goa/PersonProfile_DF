@@ -2,10 +2,10 @@
 
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 
-ENV ExposePortForHttp=80
-ENV ExposePortForHttps=443
-ENV GroupNm=appuser
-ENV UsrNm=appuser
+ENV ExposePortForHttp=8080
+ENV ExposePortForHttps=4443
+ENV GroupNm="appuser"
+ENV UsrNm="appuser"
 
 ENV ASPNETCORE_URLS=http://*:${ExposePortForHttp}
 ENV ASPNETCORE_ENVIRONMENT="Development"
